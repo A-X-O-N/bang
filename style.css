@@ -1,0 +1,40 @@
+/*---------- initial ----------*/
+
+*
+  {
+    margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+  }
+
+/*---------- menu ----------*/
+.Menu
+  {
+    border: 1px solid red;
+	width: 100%;
+	background-color: black;
+	line-height: 50px;
+  }
+  
+.Menu::after
+  {
+    content: "";
+    clear: both;
+    display: table;
+  }  
+
+.Menu a
+  {
+	float: right; 
+	text-decoration: none;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+  
+.Menu a:hover
+  {
+    background-color: white;
+	color: black;
+  } 
