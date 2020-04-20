@@ -1,0 +1,253 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ARTE půjčovna</title>
+  
+  <link rel="stylesheet" type="text/css" href="data/css/style.css">
+  <link rel="icon" href="data/images/icons/favicon.ico" type="image/ico"/>
+  <link rel="shortcut icon" href="data/images/icons/favicon.ico" type="image/x-icon"/>
+
+</head>
+
+<body>
+
+<!-- heading ---------------------------------------------------------------------------------------------------------------------------- heading -->
+
+  <div id="top-head-wrapper">
+    <div class="top-head-logo">
+      <img src="data/images/logos/logo-blue.png" alt="ARTE logo">
+      
+      <div id="top-head-decoration">
+      </div>
+    </div>
+    
+    <p><span>tel:</span> +420 123 456 789</p>
+  </div>
+
+  <div id="top-head-line">
+  </div>
+
+<!-- top navigation menu ---------------------------------------------------------------------------------------------------- top navigation menu -->
+
+  <div id="top-nav-background">
+    <div class="top-nav-wrapper">
+      <div class="top-nav-logo">
+        <img id="logo-white" class="logo-white-not-sticky" src="data/images/logos/logo-white.png" alt="ARTE logo">
+      </div>
+      
+      <div id="top-nav-number">
+        <p id="menu-number" class="menu-number-not-sticky" >+420 123 456 789</p>
+      </div>
+      
+      <div class="top-nav-icon">
+        <img id="menu-icon-on" class="top-nav-links-on" src="data/images/icons/menu-icon-on.png" alt="Mobile menu icon on" onclick="ShowMobileMenu();">
+        <img id="menu-icon-off" class="top-nav-links-off" src="data/images/icons/menu-icon-off.png" alt="Mobile menu icon off" onclick="HideMobileMenu();">
+      </div>
+      
+      <div id="top-nav-links" class="top-nav-links-off">
+        <a class="active top-nav-link" href="#Domu"><span>DOMŮ</span></a
+        ><div class="dropdown-wrapper">
+          <a class="top-nav-link exodus" href="#Stroje"><span>STROJE</span></a>
+          
+          <div class="dropdown-content">
+            <a class="dropdown-link" href="#Nakladace"><span>NAKLADAČE</span></a
+            ><a class="dropdown-link" href="#Bagry"><span>BAGRY</span></a
+            ><a class="dropdown-link" href="#Manipulatory"><span>MANIPULÁTORY</span></a>
+          </div>
+        </div
+        ><a class="top-nav-link"href="#Prubeh pronajmu"><span>PRŮBĚH PRONÁJMU</span></a
+        ><a class="top-nav-link"href="#Ke stazeni"><span>KE STAŽENÍ</span></a
+        ><a class="top-nav-link" href="#Kontakty"><span>KONTAKTY</span></a>
+      </div>
+    </div>
+  </div>
+
+<!-- mobile menu script -->
+  
+  <script type="text/javascript" src="data/javascript/mobile-menu.js">
+  </script>
+
+<!-- sticky menu script -->
+  
+  <script type="text/javascript" src="data/javascript/script-top-menu.js">
+  </script>
+
+<!-- test window -------------------------------------------------------------------------------------------------------------------- test widnow -->
+  
+  <div id="test-result">
+    <p>---Some test values---</p>
+    <p id="test-width"></p>
+    <p id="test-scroll"></p>
+    <p id="test-scroll2"></p>
+    <p id="test-slide"></p>
+  </div>
+  
+  <script type="text/javascript" src="data/javascript/script-width-test.js">
+  </script>     
+
+<!-- slideshow ------------------------------------------------------------------------------------------------------------------------ slideshow -->
+
+  <div class="slideshow">
+    <img class="slideshow-slide" src="data/images/slides/slide-01.jpg" alt="slide 01">
+    <img class="slideshow-slide" src="data/images/slides/slide-02.jpg" alt="slide 02">
+    <img class="slideshow-slide" src="data/images/slides/slide-03.jpg" alt="slide 03">
+    
+    <div class="slideshow-pagination">
+      <span class="slideshow-pagination-item" onclick="SetSlide(1);">1</span>
+      <span class="slideshow-pagination-item" onclick="SetSlide(2);">2</span>
+      <span class="slideshow-pagination-item" onclick="SetSlide(3);">3</span>
+    </div>
+  </div>
+
+<!-- slideshow script -->
+  
+  <script type="text/javascript" src="data/javascript/script-slideshow.js">
+  </script>
+
+<!-- page heading ------------------------------------------------------------------------------------------------------------------ page heading -->
+
+  <div class="custom-H1-wrapper">
+    <H1 class="custom-H1-center">Vyberte si stroj k pronájmu</H1>
+  </div>
+
+<!-- page content ------------------------------------------------------------------------------------------------------------------ page content -->
+
+  <div class="page-content-wrapper">
+    <div class="categories-container">
+      <a class="category" href="#Nakladace">
+        <img src="data/images/categories/nakladace.jpg" alt="kategorie nakladače">
+        <p>NAKLADAČE</p>
+      </a
+      
+      ><a class="category" href="#Nakladace">
+        <img src="data/images/categories/bagry.jpg" alt="kategorie nakladače">
+        <p>BAGRY</p>
+      </a
+      
+      ><a class="category" href="#Nakladace">
+        <img src="data/images/categories/manipulatory.jpg" alt="kategorie nakladače">
+        <p>MANIPULÁTORY</p>
+      </a>
+    </div>
+  </div>
+
+<!-- contact form ------------------------------------------------------------------------------------------------------------------ contact form -->
+
+  <div class="form-background">
+    <div class="form-wrapper ">
+      <div>
+        <p class="form-heading">NAPIŠTE NÁM</p>
+      </div>
+    
+      <!--form action="/action_page.php"--> <!-- dodelat PHP -->
+      <form onsubmit="return false">
+        
+        <!-- row 1 -->
+  
+        <div class="row">
+  
+          <!-- row 1 column 1 -->
+  
+          <div class="col-200">
+          
+            <div class="row">
+              <div class="col-100">
+                <input type="text" id="firstname" name="firstname" placeholder="Vaše jméno">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-100">
+                <input type="text" id="telephone" name="telephone" placeholder="Vaše telefonní číslo">
+              </div>
+            </div>
+            
+          </div>
+    
+          <!-- row 1 column 2 -->
+    
+          <div class="col-200">
+          
+            <div class="row">
+              <div class="col-100">
+                <input type="text" id="lastname" name="lastname" placeholder="*Vaše příjmení" required>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col-100">
+                <input type="email" id="email" name="email" placeholder="*Vaše e-mailová adresa" required>
+              </div>  
+            </div>
+            
+          </div>
+    
+          <!-- row 1 column 3 -->
+    
+          <div class="col-calc">
+            <textarea id="message" name="message" placeholder="Vaše zpráva"></textarea>
+          </div>
+    
+        </div>
+  
+        <!-- row 2 -->
+  
+        <div class="row">
+  
+          <div class="col-50">
+            <p class="form-info"><input type="checkbox" id="checkbox" name="checkbox" value="1" required>
+            Souhlasím se zpracováním osobních údajů</p>
+            <p class="form-info" ><a href="#GDRPR">Prohlášení o ochraně osobních údajů (GDPR)</a></p>
+          </div>  
+  
+          <div class="col-50">
+            <input type="submit" id="submit" name="submit" value="Odeslat" onclick="TestFunctionShow()"> <!-- pouze testovaci funkce -->
+          </div>
+    
+        </div>
+        
+        <div>
+          <p id="submit-message" class="submit-message-not-displayed"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<!-- contact form test script -->
+  
+  <script type="text/javascript" src="data/javascript/script-form-test.js">
+  </script>
+
+<!-- bottom footer ---------------------------------------------------------------------------------------------------------------- bottom footer -->
+  
+  <div class="bot-foot-background">
+    <div class="bot-foot-wrapper ">
+      <div class="bot-foot-left">
+        <p class="bot-foot-heading">ARTE Půjčovna<br><br></p>
+        <p>Kutnohorská 288<br>
+        110 00 Praha 10</p>
+      </div>
+
+      <div class="bot-foot-mid">
+        <p class="bot-foot-heading">Kontakt<br><br></p>
+        <p><span>tel:</span> +420 123 456 789<br>
+        <span>e-mail:</span> info@arte-pujcovna.cz</p>
+      </div>
+      
+      <div class="bot-foot-right">
+        <p class="bot-foot-heading">Otevírací doba<br><br></p>
+        <p><span>po - pá:</span> 7:00 - 16:00<br>
+        <span>so - ne:</span> zavřeno</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
