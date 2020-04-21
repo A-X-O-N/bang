@@ -22,10 +22,8 @@ function MakeMenuStick()
       {
         /* sticky menu */
         
-        TopLine.style.marginBottom = "50px";
-        /*TopLine.style.marginBottom = "300px";*/ /* working */
-        /*TopLine.classList.add("top-head-line-sticky");*/ /* working */
-        /*TopLine.style.marginBottom = TopNav.offsetHeight + "px";*/
+        /*TopLine.style.marginBottom = "50px";*/ /* working firefox; NOT WORKING chrome, ms edge */
+        TopLine.classList.add("top-head-line-sticky"); /* working firefox; NOT WORKING chrome, ms edge */
         document.getElementById("test-scroll2").innerHTML = "Stick margin: " + TopNav.offsetHeight;
         
         TopNav.classList.add("top-nav-background-sticky");
@@ -39,9 +37,8 @@ function MakeMenuStick()
       {
         /* not sticky menu */
         
-        TopLine.style.marginBottom = "0px";
-        /*TopLine.classList.remove("top-head-line-sticky");*/ /* working */
-        /*TopLine.style.marginBottom = "0px";*/ /* working */
+        /*TopLine.style.marginBottom = "0px";*/ /* working firefox, chrome, ms edge */
+        TopLine.classList.remove("top-head-line-sticky"); /* working firefox, chrome, ms edge */
         document.getElementById("test-scroll2").innerHTML = "Stick margin: " + TopLine.style.marginBottom;
         
         TopNav.classList.remove("top-nav-background-sticky");

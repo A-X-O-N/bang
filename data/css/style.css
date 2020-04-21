@@ -186,6 +186,11 @@ body
     background-color: var(--custom-menu-background-color);
   }
 
+.top-head-line-sticky
+  {
+    margin-bottom: var(--custom-menu-height);
+  }
+
 /* ---------- top navigation menu ------------------------------- top navigation menu ---------- */
 
 #top-nav-background
@@ -356,7 +361,7 @@ body
 
 .slideshow
   {
-    position: relative;
+    /*position: relative;*/
     margin-left: var(--custom-wide-screen-margin);
     margin-right: var(--custom-wide-screen-margin);
     padding-left: var(--custom-content-padding-horizontal);
@@ -371,27 +376,31 @@ body
 .slideshow-pagination
   {
     width: 100%;
-    position: absolute;
-    bottom: 20px;
-    left: 0px;
+    /*position: absolute;*/
+    /*bottom: 20px;*/
+    /*left: 0px;*/
     text-align: center;
+    /*border: 1px solid red;*/
+    /*padding-top: 10px;*/
   }
 
 .slideshow-pagination-item
   {
     display: inline-block;
-    line-height: 50px;
-    width: 50px;
-    border-radius: 5px;
-    background-color: rgb(30, 30, 30);
-    color: rgb(225, 225, 225);
+    line-height: 25px;
+    width: 80px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: rgb(225, 225, 225);
+    color: rgb(30, 30, 30);
     cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
 .slideshow-pagination-item:hover
   {
-    background-color: rgb(225, 225, 225);
-    color: rgb(30, 30, 30);
+    background-color: rgb(30, 30, 30);
+    color: rgb(225, 225, 225);
   }
 
 .slideshow-pagination-item-active
