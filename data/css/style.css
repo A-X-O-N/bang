@@ -44,12 +44,14 @@
     --custom-menu-active-font-color: rgb(30, 30, 30);
     --custom-menu-hover-background-color: rgb(225, 225, 225);
     --custom-menu-hover-font-color: rgb(30, 30, 30);
-    --custom-menu-mobile-background-color: rgba(30, 30, 30, 0.75); /* rgba */
+    --custom-menu-mobile-background-color: rgba(30, 30, 30, 0.75);
+    /*--custom-menu-shadow: 0px 20px 20px 0px rgb(0, 0, 0);*/
     
     --custom-dropdown-background-color: rgb(225, 225, 225);
     --custom-dropdown-font-color: rgb(30, 30, 30);
     --custom-dropdown-hover-background-color: rgb(30, 30, 30);
     --custom-dropdown-hover-font-color: rgb(225, 225, 225);    
+    --custom-dropdown-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
     
     /* slideshow */
     
@@ -64,7 +66,7 @@
     --custom-category-text-background-height: 50px;    
     --custom-category-font-size: 2rem;
     
-    --custom-category-shadow: 2px 2px 4px rgb(127, 127, 127);
+    --custom-category-shadow: 2px 2px 4px 0px rgb(127, 127, 127);
     --custom-category-text-background-color: rgb(225, 225, 225);
     --custom-category-font-color: rgb(30,30, 30);
     --custom-category-hover-background-color: rgb(254, 218, 106);
@@ -97,7 +99,7 @@
     
     /* break points */
     
-    --custom-break: 900px; /* if changed, chnage the media query too*/
+    --custom-break: 900px; /* if changed, chnage the media query too */
 
   }
 
@@ -186,18 +188,19 @@ body
     background-color: var(--custom-menu-background-color);
   }
 
-.top-head-line-sticky
-  {
-    margin-bottom: var(--custom-menu-height);
-  }
-
 /* ---------- top navigation menu ------------------------------- top navigation menu ---------- */
+
+#top-nav-placeholder
+  {
+    height: var(--custom-menu-height);
+    width: 100%;
+  }
 
 #top-nav-background
   {
     width: 100%;
     background-color: var(--custom-menu-background-color);
-    min-height: var(--custom-menu-height); /* holds the menu height when its elements are floated or displayed as none */
+    height: var(--custom-menu-height);
   }
 
 .top-nav-background-sticky
@@ -288,6 +291,7 @@ body
     position: absolute;
     z-index: 3;
     background-color: var(--custom-dropdown-background-color);
+    box-shadow: var(--custom-dropdown-shadow);
   }
 
 .dropdown-link
@@ -361,11 +365,14 @@ body
 
 .slideshow
   {
-    /*position: relative;*/
     margin-left: var(--custom-wide-screen-margin);
     margin-right: var(--custom-wide-screen-margin);
     padding-left: var(--custom-content-padding-horizontal);
     padding-right: var(--custom-content-padding-horizontal);
+    
+    /* for pagination on top of slides */
+    /*                                 */
+    /*position: relative;              */
   }
 
 .slideshow img
@@ -376,12 +383,13 @@ body
 .slideshow-pagination
   {
     width: 100%;
-    /*position: absolute;*/
-    /*bottom: 20px;*/
-    /*left: 0px;*/
     text-align: center;
-    /*border: 1px solid red;*/
-    /*padding-top: 10px;*/
+    
+    /* for pagination on top of slides */
+    /*                                 */
+    /*position: absolute;              */
+    /*bottom: 20px;                    */
+    /*left: 0px;                       */
   }
 
 .slideshow-pagination-item
@@ -492,7 +500,7 @@ H1
 
 .form-background
   {
-    width:°100%;
+    width:100%;
     background-color: var(--custom-form-background-color);
   }
 
@@ -612,7 +620,7 @@ input[type="submit"]:hover
 
 .bot-foot-background
   {
-    width:°100%;
+    width:100%;
     background-color: var(--custom-footer-background-color);
   }
 
@@ -845,9 +853,27 @@ input[type="submit"]:hover
       
     .dropdown-content
       {
-        width: var(--custom-dropdown-mobile-width);
-        left: calc((100% - var(--custom-dropdown-mobile-width)) / 2);
-      }   
+        box-shadow: none;
+        position: static;
+        display: block;
+        background-color: transparent;
+      }
+      
+    .dropdown-link
+      {
+        color: var(--custom-menu-font-color);
+      }
+    
+    .dropdown-link:hover
+      {
+        background-color: var(--custom-menu-hover-background-color);
+        color: var(--custom-menu-hover-font-color);
+      }
+
+    .exodus
+      {
+        display: none;
+      }
       
     .top-nav-icon
       {
@@ -861,8 +887,14 @@ input[type="submit"]:hover
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
       }
-      
+
+    /* for pagination on top of slides */
+    /*                                 */
+    /*position: relative;              */
+    
     /* page heading */
     
     .custom-H1-wrapper

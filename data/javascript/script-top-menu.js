@@ -22,10 +22,6 @@ function MakeMenuStick()
       {
         /* sticky menu */
         
-        /*TopLine.style.marginBottom = "50px";*/ /* working firefox; NOT WORKING chrome, ms edge */
-        TopLine.classList.add("top-head-line-sticky"); /* working firefox; NOT WORKING chrome, ms edge */
-        document.getElementById("test-scroll2").innerHTML = "Stick margin: " + TopNav.offsetHeight;
-        
         TopNav.classList.add("top-nav-background-sticky");
         TopDeco.classList.add("top-head-decoration-sticky");
         
@@ -37,14 +33,10 @@ function MakeMenuStick()
       {
         /* not sticky menu */
         
-        /*TopLine.style.marginBottom = "0px";*/ /* working firefox, chrome, ms edge */
-        TopLine.classList.remove("top-head-line-sticky"); /* working firefox, chrome, ms edge */
-        document.getElementById("test-scroll2").innerHTML = "Stick margin: " + TopLine.style.marginBottom;
-        
         TopNav.classList.remove("top-nav-background-sticky");
         TopDeco.classList.remove("top-head-decoration-sticky");
         
         MenuLogo.classList.add("logo-white-not-sticky");
-        MenuNumber.classList.add("menu-number-not-sticky"); /* asi by se nemelo delat pokud je okno uzke ale zatim to funguje, popripade udelat menu javascriptem, 4 stavy a kontrolovat pri scrolovani a pri zmene sirky okna. Nebo zmenit sticky classy v media pro 900px*/
+        MenuNumber.classList.add("menu-number-not-sticky"); /* this works if class does NOT override id property values */
       }
   }
