@@ -3,6 +3,7 @@
 	--col02: rgb(218,25,23);
 	--col03: rgb(150,36,27);
 	--col04: rgb(146,9,0);
+	--col-test: rgb(153,217,234);
 }
 
 * {
@@ -11,9 +12,14 @@
 }
 
 div.centered {
+	clear: both;
 	padding-top: 10px;
-	background-color: blue;
 	text-align: center;
+}
+
+div.list p {
+	padding-bottom: 10px;
+	font-size: 2em;
 }
 
 a.menu-element {
@@ -26,13 +32,14 @@ a.menu-element {
 	background-color: var(--col03);
 	text-align: center;
 	color: white;
+	font-size: 2em;
 	font-weight: bold;
 	text-decoration: none;
 	text-shadow: 2px 2px 4px black;
 }
 
 a.active {
-	border-top: 5px solid var(--col01);
-	border-bottom: 10px solid var(--col04);
+	border-top-color: var(--col01);
+	border-bottom-color: var(--col04);
 	background-color: var(--col02);
 }
