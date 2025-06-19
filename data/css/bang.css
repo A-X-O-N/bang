@@ -1,8 +1,8 @@
 :root {
-	--col01: rgb(245,49,47);
-	--col02: rgb(218,25,23);
-	--col03: rgb(150,36,27);
-	--col04: rgb(146,9,0);
+	--col-01: rgb(245,49,47);
+	--col-02: rgb(218,25,23);
+	--col-03: rgb(150,36,27);
+	--col-04: rgb(146,9,0);
 	--col-test: rgb(153,217,234);
 }
 
@@ -20,18 +20,18 @@ div.centered {
 }
 
 div.list p {
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 	font-size: 1.5em;
 }
 
 a.menu-element {
 	float: left;
 	width: 50%;
-	border-top: 5px solid var(--col03);
-	border-bottom: 10px solid var(--col03);
+	border-top: 5px solid var(--col-03);
+	border-bottom: 10px solid var(--col-03);
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: var(--col03);
+	background-color: var(--col-03);
 	text-align: center;
 	color: white;
 	font-size: 1.5em;
@@ -41,7 +41,7 @@ a.menu-element {
 }
 
 a.active {
-	border-top-color: var(--col01);
-	border-bottom-color: var(--col04);
-	background-color: var(--col02);
+	border-top-color: var(--col-01);
+	border-bottom-color: var(--col-04);
+	background-color: var(--col-02);
 }
