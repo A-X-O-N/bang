@@ -14,12 +14,14 @@
 div.centered {
 	clear: both;
 	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10 px;
 	text-align: center;
 }
 
 div.list p {
 	padding-bottom: 10px;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 a.menu-element {
@@ -32,7 +34,7 @@ a.menu-element {
 	background-color: var(--col03);
 	text-align: center;
 	color: white;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 	text-decoration: none;
 	text-shadow: 2px 2px 4px black;
