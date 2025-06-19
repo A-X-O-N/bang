@@ -24,6 +24,14 @@ div.list p {
 	font-size: 1.5em;
 }
 
+h1 {
+	font-size: 1em;
+}
+
+h2 {
+	font-size: 1em;
+}
+
 a.menu-element {
 	float: left;
 	width: 50%;
