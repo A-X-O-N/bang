@@ -31,7 +31,6 @@ div.centered {
 }
 
 div.list p {
-	padding-top: var(--vertical-padding);
 	font-size: var(--list-font-size);
 }
 
