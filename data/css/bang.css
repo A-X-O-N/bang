@@ -46,7 +46,7 @@ h2 {
 }
 
 p.end {
-	padding-bottom: var(--vertical-padding);
+	/*padding-bottom: var(--vertical-padding);*/
 }
 
 a.menu-element {
