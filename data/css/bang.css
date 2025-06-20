@@ -45,6 +45,10 @@ h2 {
 	padding-top: var(--heading-padding);
 }
 
+p {
+	padding-top: var(--vertical-padding);
+}
+
 p.end {
 	/*padding-bottom: var(--vertical-padding);*/
 }
