@@ -45,6 +45,10 @@ h2 {
 	padding-top: var(--heading-padding);
 }
 
+p.end {
+	padding-bottom: var(--vertical-padding);
+}
+
 a.menu-element {
 	float: left;
 	width: 50%;
