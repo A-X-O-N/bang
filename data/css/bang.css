@@ -1,54 +1,76 @@
 :root {
-	--col-01: rgb(245,49,47);
-	--col-02: rgb(218,25,23);
-	--col-03: rgb(150,36,27);
-	--col-04: rgb(146,9,0);
-	--col-test: rgb(153,217,234);
+	--col-b-top: rgb(245,49,47);
+	--col-active: rgb(218,25,23);
+	--col-inactive: rgb(150,36,27);
+	--col-b-bot: rgb(146,9,0);
+	--col-explanation: blue;
+	--col-custom: red;
+	--horizontal-padding: 10px;
+	--vertical-padding: 10px;
+	--heading-padding: 10px;
+	--menu-font-size: 1.5em;
+	--list-font-size: 1.5em;
+	--h1-font-size: 1.5em;
+	--h2-font-size: 1em;
 }
 
 * {
 	margin: 0px;
 	padding: 0px;
 }
+body {
+	padding-bottom: var(--vertical-padding);
+}
 
 div.centered {
-	padding-left: 10px;
-	padding-right: 10px;
+	clear: both;
+	padding-bottom: var(--vertical-padding);
+	padding-left: var(--horizontal-padding);
+	padding-right: var(--horizontal-padding);
 	text-align: center;
 }
 
 div.list p {
-	font-size: 1.5em;
+	padding-top: var(--vertical-padding);
+	font-size: var(--list-font-size);
 }
 
 h1 {
-	margin-top: 10px;
-	font-size: 1em;
+	font-size: var(--h1-font-size);
+	padding-top: var(--heading-padding);
 }
 
 h2 {
-	margin-top: 10px;
-	font-size: 1em;
+	font-size: var(--h2-font-size);
+	padding-top: var(--heading-padding);
 }
 
 a.menu-element {
 	float: left;
 	width: 50%;
-	border-top: 5px solid var(--col-03);
-	border-bottom: 10px solid var(--col-03);
+	border-top: 5px solid var(--col-inactive);
+	border-bottom: 10px solid var(--col-inactive);
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: var(--col-03);
+	background-color: var(--col-inactive);
 	text-align: center;
 	color: white;
-	font-size: 1.5em;
 	font-weight: bold;
+	font-size: var(--menu-font-size);
 	text-decoration: none;
 	text-shadow: 2px 2px 4px black;
 }
 
 a.active {
-	border-top-color: var(--col-01);
-	border-bottom-color: var(--col-04);
-	background-color: var(--col-02);
+	border-top: 5px solid var(--col-b-top);
+	border-bottom: 10px solid var(--col-b-bot);
+	background-color: var(--col-active);
+}
+
+h2.explanation, p.explanation, span.explanation {
+	color: var(--col-explanation)
+}
+
+h2.custom, p.custom, span.custom {
+	color: var(--col-custom)
 }
