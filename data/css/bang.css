@@ -1,8 +1,13 @@
+/* variables */
+
 :root {
+	/* unused */
 	--col-b-top: rgb(245,49,47);
+	--col-b-bot: rgb(146,9,0);
+	
+	/* used */
 	--col-active: rgb(218,25,23);
 	--col-inactive: rgb(150,36,27);
-	--col-b-bot: rgb(146,9,0);
 	--col-explanation: blue;
 	--col-custom: red;
 	--horizontal-padding: 10px;
@@ -14,17 +19,25 @@
 	--h2-font-size: 1em;
 }
 
+/* all tags */
+
 * {
 	margin: 0px;
 	padding: 0px;
 }
+
+/* body tag */
+
 body {
 	padding-bottom: var(--vertical-padding);
 }
 
+/* div tag */
+
 div.menu-container {
 	display: flex;
-	background-color: DodgerBlue;
+	justify-content: center;
+	background-color: var(--col-inactive);
 }
 
 div.centered {
@@ -39,6 +52,8 @@ div.list p {
 	font-size: var(--list-font-size);
 }
 
+/* headings tags */
+
 h1 {
 	font-size: var(--h1-font-size);
 	padding-top: var(--heading-padding);
@@ -49,17 +64,20 @@ h2 {
 	padding-top: var(--heading-padding);
 }
 
+/* p tag */
+
 p {
 	padding-top: var(--vertical-padding);
 }
 
+/* a tag */
+
 a.menu-element {
-	float: left;
-	width: 50%;
-	border-top: 5px solid var(--col-inactive);
-	border-bottom: 10px solid var(--col-inactive);
+	/* flex-basis: 20%; */
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	background-color: var(--col-inactive);
 	text-align: center;
 	color: white;
@@ -70,10 +88,10 @@ a.menu-element {
 }
 
 a.active {
-	border-top: 5px solid var(--col-b-top);
-	border-bottom: 10px solid var(--col-b-bot);
 	background-color: var(--col-active);
 }
+
+/* Multiple tags with same class */
 
 h2.explanation, p.explanation, span.explanation {
 	color: var(--col-explanation)
