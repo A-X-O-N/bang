@@ -22,6 +22,11 @@ body {
 	padding-bottom: var(--vertical-padding);
 }
 
+div.menu-container {
+	display: flex;
+	background-color: DodgerBlue;
+}
+
 div.centered {
 	clear: both;
 	padding-bottom: var(--vertical-padding);
