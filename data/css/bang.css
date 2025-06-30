@@ -12,7 +12,7 @@
 	--col-custom: red;
 	--horizontal-padding: 10px;
 	--vertical-padding: 10px;
-	--heading-padding: 10px;
+	--content-margin: 10px;
 	--menu-font-size: 1.5em;
 	--list-font-size: 1.5em;
 	--h1-font-size: 1.5em;
@@ -38,25 +38,22 @@ div.menu-container {
 	display: flex;
 	justify-content: center;
 	background-color: var(--col-background);
+	font-weight: bold;
+	font-size: var(--menu-font-size);
+	text-shadow: 2px 2px 4px black;
 }
 
 span.menu-spacer {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	color: white;
-	font-weight: bold;
-	font-size: var(--menu-font-size);
-	text-shadow: 2px 2px 4px black;
 }
 
 a.menu-element {
 	padding: 10px;
-	text-align: center;
 	color: white;
-	font-weight: bold;
-	font-size: var(--menu-font-size);
+	text-align: center;
 	text-decoration: none;
-	text-shadow: 2px 2px 4px black;
 }
 
 a.active {
@@ -66,7 +63,6 @@ a.active {
 /* page content */
 
 div.centered {
-	clear: both;
 	padding-bottom: var(--vertical-padding);
 	padding-left: var(--horizontal-padding);
 	padding-right: var(--horizontal-padding);
@@ -79,16 +75,16 @@ div.list p {
 
 h1 {
 	font-size: var(--h1-font-size);
-	padding-top: var(--heading-padding);
+	margin-top: var(--content-margin);
 }
 
 h2 {
 	font-size: var(--h2-font-size);
-	padding-top: var(--heading-padding);
+	margin-top: var(--content-margin);
 }
 
 p {
-	padding-top: var(--vertical-padding);
+	margin-top: var(--content-margin);
 }
 
 h2.explanation, p.explanation, span.explanation {
