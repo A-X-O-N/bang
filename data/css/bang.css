@@ -1,18 +1,14 @@
 /* variables */
 
 :root {
-	/* unused */
-	--col-bang-01: rgb(245,49,47);
-
-	/* used */
 	--col-background: rgb(146,9,0);
 	--col-inactive: rgb(150,36,27);
 	--col-active: rgb(218,25,23);
+	--col-text: white;
 	--col-explanation: blue;
 	--col-custom: red;
-	--horizontal-padding: 10px;
-	--vertical-padding: 10px;
-	--content-margin: 10px;
+	--page-padding: 10px;
+	--content-vertical-margin: 10px;
 	--menu-font-size: 1.5em;
 	--list-font-size: 1.5em;
 	--h1-font-size: 1.5em;
@@ -29,7 +25,7 @@
 /* body tag */
 
 body {
-	padding-bottom: var(--vertical-padding);
+	padding-bottom: var(--page-padding);
 }
 
 /* navigation menu */
@@ -44,14 +40,14 @@ div.menu-container {
 }
 
 span.menu-spacer {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	color: white;
+	padding-top: var(--page-padding);
+	padding-bottom: var(--page-padding);
+	color: var(--col-text);
 }
 
 a.menu-element {
-	padding: 10px;
-	color: white;
+	padding: var(--page-padding);
+	color: var(--col-text);
 	text-align: center;
 	text-decoration: none;
 }
@@ -63,9 +59,9 @@ a.active {
 /* page content */
 
 div.centered {
-	padding-bottom: var(--vertical-padding);
-	padding-left: var(--horizontal-padding);
-	padding-right: var(--horizontal-padding);
+	padding-bottom: var(--page-padding);
+	padding-left: var(--page-padding);
+	padding-right: var(--page-padding);
 	text-align: center;
 }
 
@@ -75,16 +71,16 @@ div.list p {
 
 h1 {
 	font-size: var(--h1-font-size);
-	margin-top: var(--content-margin);
+	margin-top: var(--content-vertical-margin);
 }
 
 h2 {
 	font-size: var(--h2-font-size);
-	margin-top: var(--content-margin);
+	margin-top: var(--content-vertical-margin);
 }
 
 p {
-	margin-top: var(--content-margin);
+	margin-top: var(--content-vertical-margin);
 }
 
 h2.explanation, p.explanation, span.explanation {
