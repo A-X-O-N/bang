@@ -3,7 +3,7 @@
 :root {
 	--col-background: rgb(146,9,0);
 	--col-active: rgb(218,25,23);
-	--col-text: white;
+	--col-text: rgb(255, 255, 255);
 	--col-explanation: blue;
 	--col-custom: red;
 	--spacing: 10px;
@@ -46,7 +46,6 @@ span.menu-spacer {
 a.menu-element {
 	padding: var(--spacing);
 	color: var(--col-text);
-	text-align: center;
 	text-decoration: none;
 }
 
@@ -79,6 +78,11 @@ h2 {
 
 p {
 	margin-top: var(--spacing);
+}
+
+img {
+	margin-top: var(--spacing);
+	/*box-shadow: 0px 0px 10px black;*/ /* horizontal, vertical, blur, color */
 }
 
 h2.explanation, p.explanation, span.explanation {
