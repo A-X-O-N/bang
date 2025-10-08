@@ -80,9 +80,24 @@ p {
 	margin-top: var(--spacing);
 }
 
+p.centered_line {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+
+p.centered_line img {
+	margin-top: 0px;
+}
+
 img {
 	margin-top: var(--spacing);
 	/*box-shadow: 0px 0px 10px black;*/ /* horizontal, vertical, blur, color */
+}
+
+p.marked, span.marked {
+	font-weight: bold;
 }
 
 h2.explanation, p.explanation, span.explanation {
