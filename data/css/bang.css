@@ -74,21 +74,11 @@ h1 {
 h2 {
 	font-size: var(--h2-font-size);
 	margin-top: var(--spacing);
+	/*background-color: rgb(200,200,200);*/
 }
 
 p {
 	margin-top: var(--spacing);
-}
-
-p.centered_line {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: left;
-}
-
-p.centered_line img {
-	margin-top: 0px;
 }
 
 img {
